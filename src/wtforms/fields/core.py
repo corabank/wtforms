@@ -106,6 +106,7 @@ class Field:
 
         self.default = default
         self.description = description
+        self.group = group
         self.render_kw = render_kw
         self.filters = filters
         self.flags = Flags()
