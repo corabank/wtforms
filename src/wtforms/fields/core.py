@@ -38,6 +38,7 @@ class Field:
         validators=None,
         filters=(),
         description="",
+        group="",
         id=None,
         default=None,
         widget=None,
@@ -59,6 +60,8 @@ class Field:
             A sequence of filters which are run on input data by `process`.
         :param description:
             A description for the field, typically used for help text.
+        :param group:
+            A group to the field, it's help if you want to create a group fields in template.
         :param id:
             An id to use for the field. A reasonable default is set by the form,
             and you shouldn't need to set this manually.
